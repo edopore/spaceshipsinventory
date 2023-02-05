@@ -22,6 +22,8 @@ if __name__=="__main__":
                 noncrew.createstarship()
             elif(shiptype==3):
                 crew.createstarship()
+            else:
+                print("Opción no habilitada")
         elif(option==3):
             shiptype = int(input("Por favor escoja el tipo de nave 1-Lanzador, 2-Nave no tripulada, 3-Nave tripulada opción: "))
             if(shiptype==1):
@@ -30,6 +32,8 @@ if __name__=="__main__":
                 noncrew.getshipinfo(2)
             elif(shiptype==3):
                 crew.getshipinfo(3)
+            else:
+                print("Opción no habilitada")
             input("Presione Enter para continuar")
         elif(option==4):
             shiptype = int(input("Por favor escoja el tipo de nave 1-Lanzador, 2-Nave no tripulada, 3-Nave tripulada opción: "))
@@ -84,7 +88,9 @@ if __name__=="__main__":
                     input("Presione Enter para continuar")
                 else:
                     print("Opción no habilitada")
+            else:
+                print("Opción no habilitada")
         elif(option==5):
             exit = input("Está seguro que desea Salir? [n, y] opción: ")
-        
-        
+        else:
+            print("Opción no habilitada")
